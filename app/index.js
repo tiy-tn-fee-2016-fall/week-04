@@ -121,16 +121,24 @@ console.log(olive.isTrustworthy());
 //   console.log(c);
 // }
 
-import characterView from './character-view';
+import CharacterView from './character-view';
 
 // Same as the for loop above
 characters.forEach((item) => {
   const c = new Character(item);
 
-  const el = characterView(c);
+  const view = new CharacterView(c);
+  view.render();
 
   // Adding Element to the end of body
-  document.body.appendChild(el);
+  document.body.appendChild(view.el);
 
   console.log(c);
+
+  setTimeout(function () {
+    c.first = 'September';
+    view.render();
+
+    console.log(view.model);
+  }, 3 * 1000);
 });
