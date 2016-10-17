@@ -1,0 +1,59 @@
+[
+  {
+    "firstName": "Olivia",
+    "lastName": "Dunham",
+    "hair": "blonde",
+    "universe": 1,
+    "profession": "FBI Special Agent",
+    "age": 35
+  },
+  {
+    "firstName": "Walter",
+    "lastName": "Bishop",
+    "universe": 1,
+    "profession": "Research Scientist",
+    "age": 64
+  },
+  {
+    "firstName": "Peter",
+    "lastName": "Bishop",
+    "universe": 1,
+    "profession": "Civilian Consultant",
+    "age": 33
+  },
+  {
+    "firstName": "William",
+    "lastName": "Bell",
+    "universe": 1,
+    "profession": "CEO Massive Dynamic",
+    "age": 83
+  },
+  {
+    "firstName": "Astrid",
+    "lastName": "Farnsworth",
+    "universe": 1,
+    "profession": "FBI Agent",
+    "age": 28
+  },
+  {
+    "firstName": "Charlie",
+    "lastName": "Francis",
+    "universe": 1,
+    "profession": "FBI Agent",
+    "age": 33
+  },
+  {
+    "firstName": "Phillip",
+    "lastName": "Broyles",
+    "universe": 1,
+    "profession": "Senior FBI Agent",
+    "age": 56
+  },
+  {
+    "firstName": "David",
+    "lastName": "Robert Jones",
+    "universe": 1,
+    "profession": "Bioterrorist",
+    "age": 52
+  }
+]
