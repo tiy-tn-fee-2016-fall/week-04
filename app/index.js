@@ -121,28 +121,13 @@ console.log(olive.isTrustworthy());
 //   console.log(c);
 // }
 
+import characterView from './character-view';
+
 // Same as the for loop above
 characters.forEach((item) => {
   const c = new Character(item);
 
-
-  // Element Setup
-  // <div class="character">
-  //   <p class="character__name"></p>
-  //   <p class="character__profession"></p>
-  //   <p class="character__age"></p>
-  // </div>
-  const el = document.createElement('div');
-  el.classList.add('character');
-  el.innerHTML = `
-    <p class="character__name"></p>
-    <p class="character__profession"></p>
-    <p class="character__age"></p>`;
-
-  // Element Filling - rendering
-  el.querySelector('.character__name').innerText = `${c.first} ${c.last}`; 'Olivia Dunham';
-  el.querySelector('.character__profession').innerText = c.profession;
-  el.querySelector('.character__age').innerText = c.age;
+  const el = characterView(c);
 
   // Adding Element to the end of body
   document.body.appendChild(el);
