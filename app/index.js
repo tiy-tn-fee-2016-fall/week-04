@@ -1,4 +1,5 @@
 import 'whatwg-fetch';
+import UserView from './views/user';
 
 const family = [
   {
@@ -80,6 +81,8 @@ later.then((information) => {
 
 // Getting API data
 
+const uv = new UserView(document.querySelector('.user'), {});
+
 fetch('https://randomuser.me/api')
   // .then((result) => {
   //   return result.json()
@@ -88,6 +91,6 @@ fetch('https://randomuser.me/api')
   .then((data) => {
     const person = data.results[0];
 
-    document.querySelector('.user__first-name').innerText
-      = person.name.first;
+    uv.model = person;
+    uv.render();
   });
